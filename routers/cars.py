@@ -4,9 +4,9 @@ from fastapi.responses import Response
 from pymongo import ReturnDocument
 import cloudinary
 from cloudinary import uploader # noqa: F401
-from carbackend.models.authentication import AuthHandler
+from authentication import AuthHandler
 from config import BaseConfig
-from models import CarCollection, CarCollectionPagination, CarModel, UpdateCarModel
+from models import CarCollection, CarModel, UpdateCarModel
 
 settings = BaseConfig()
 
